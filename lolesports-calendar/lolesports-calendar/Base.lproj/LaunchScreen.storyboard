@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Screen Background Image.png" translatesAutoresizingMaskIntoConstraints="NO" id="CZx-Ux-wZQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Screen Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y3k-bh-G3E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="1" green="0.22352941179999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Screen Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="69I-9G-SLW">
+                                <rect key="frame" x="87.666666666666686" y="306" width="200" height="200"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="W5g-TV-m5I"/>
+                                    <constraint firstAttribute="width" constant="200" id="iKx-rG-NMD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A simple app for League of Legends Esports schedule." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiw-0O-otJ">
+                                <rect key="frame" x="20" y="573.33333333333337" width="335" height="15.333333333333371"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOL ESPORTS SCHEDULE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTa-oo-A09">
+                                <rect key="frame" x="20" y="526" width="335" height="27.333333333333371"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="69I-9G-SLW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1dB-6k-fbP"/>
+                            <constraint firstAttribute="trailing" secondItem="Y3k-bh-G3E" secondAttribute="trailing" id="6ah-ns-07k"/>
+                            <constraint firstItem="CZx-Ux-wZQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="CBU-m6-Jv1"/>
+                            <constraint firstItem="xiw-0O-otJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="I2E-fx-qeB"/>
+                            <constraint firstItem="xiw-0O-otJ" firstAttribute="top" secondItem="pTa-oo-A09" secondAttribute="bottom" constant="20" id="Ikk-jE-K6f"/>
+                            <constraint firstItem="CZx-Ux-wZQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="J0B-xC-b6h"/>
+                            <constraint firstItem="pTa-oo-A09" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" constant="-20" id="Kq8-MY-2os"/>
+                            <constraint firstAttribute="bottom" secondItem="Y3k-bh-G3E" secondAttribute="bottom" id="Paj-zf-KrP"/>
+                            <constraint firstItem="pTa-oo-A09" firstAttribute="top" secondItem="69I-9G-SLW" secondAttribute="bottom" constant="20" id="Pfr-tq-EMG"/>
+                            <constraint firstItem="CZx-Ux-wZQ" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="aTm-hD-Vxd"/>
+                            <constraint firstItem="pTa-oo-A09" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="fN0-qt-0OF"/>
+                            <constraint firstItem="Y3k-bh-G3E" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="sst-9c-U6K"/>
+                            <constraint firstItem="69I-9G-SLW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uTD-lk-nPu"/>
+                            <constraint firstAttribute="leading" secondItem="Y3k-bh-G3E" secondAttribute="leading" id="vbh-YL-qKK"/>
+                            <constraint firstItem="xiw-0O-otJ" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" constant="-20" id="vxc-mQ-Rpn"/>
+                            <constraint firstItem="CZx-Ux-wZQ" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="wUt-GI-qRI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Launch Screen Background Image.png" width="1804" height="1920"/>
+        <image name="Launch Screen Background.jpg" width="1024" height="1024"/>
+        <image name="Launch Screen Icon.png" width="153.60000610351562" height="153.60000610351562"/>
+    </resources>
+</document>

@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		802026AA224E8291005148A5 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802026A9224E8291005148A5 /* LeagueTableViewCell.swift */; };
+		802160462248431500FF2D91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 802160452248431400FF2D91 /* GoogleService-Info.plist */; };
+		803B3D432253C7A100AC61C8 /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B3D422253C7A100AC61C8 /* Serie.swift */; };
+		803B3D492253D40900AC61C8 /* SerieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B3D482253D40900AC61C8 /* SerieTableViewCell.swift */; };
+		803B3D4E22544FA800AC61C8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B3D4D22544FA800AC61C8 /* MainViewController.swift */; };
+		804868B4224AF2A60012B379 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804868B3224AF2A60012B379 /* Team.swift */; };
+		804868B6224AF2AD0012B379 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804868B5224AF2AD0012B379 /* Result.swift */; };
+		804868B8224AF2B50012B379 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804868B7224AF2B50012B379 /* Status.swift */; };
+		804868BA224AF2BD0012B379 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804868B9224AF2BD0012B379 /* Match.swift */; };
+		804868BC224AF2C30012B379 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804868BB224AF2C30012B379 /* Tournament.swift */; };
+		804868BE224AF2C90012B379 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804868BD224AF2C90012B379 /* RequestError.swift */; };
+		804868C5224B35310012B379 /* Opponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804868C4224B35310012B379 /* Opponent.swift */; };
+		804B23812268FE3900BAF8D4 /* UIFont Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B23802268FE3800BAF8D4 /* UIFont Extension.swift */; };
+		805C33782260438100AFE477 /* MatchCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C33772260438100AFE477 /* MatchCollection.swift */; };
+		805C338E22604E3D00AFE477 /* FastAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338122604E3A00AFE477 /* FastAnimator.swift */; };
+		805C338F22604E3D00AFE477 /* CRRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338522604E3B00AFE477 /* CRRefreshExtension.swift */; };
+		805C339022604E3D00AFE477 /* CRRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338A22604E3C00AFE477 /* CRRefreshHeaderView.swift */; };
+		805C339122604E3D00AFE477 /* NormalFooterAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338822604E3C00AFE477 /* NormalFooterAnimator.swift */; };
+		805C339222604E3D00AFE477 /* RamotionWaveLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338222604E3A00AFE477 /* RamotionWaveLayer.swift */; };
+		805C339322604E3D00AFE477 /* FastCheckLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338C22604E3D00AFE477 /* FastCheckLayer.swift */; };
+		805C339422604E3D00AFE477 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C337C22604E3900AFE477 /* UIColorExtension.swift */; };
+		805C339522604E3D00AFE477 /* SlackLoadingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C337E22604E3A00AFE477 /* SlackLoadingAnimator.swift */; };
+		805C339622604E3D00AFE477 /* FastLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338722604E3C00AFE477 /* FastLayer.swift */; };
+		805C339722604E3D00AFE477 /* WCLLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C337D22604E3900AFE477 /* WCLLoadingView.swift */; };
+		805C339822604E3D00AFE477 /* NormalHeaderAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338B22604E3C00AFE477 /* NormalHeaderAnimator.swift */; };
+		805C339922604E3D00AFE477 /* CRRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C337B22604E3900AFE477 /* CRRefreshProtocol.swift */; };
+		805C339A22604E3D00AFE477 /* RamotionBallLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C337A22604E3900AFE477 /* RamotionBallLayer.swift */; };
+		805C339B22604E3D00AFE477 /* FastArrowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338422604E3B00AFE477 /* FastArrowLayer.swift */; };
+		805C339C22604E3D00AFE477 /* CRRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338022604E3A00AFE477 /* CRRefreshFooterView.swift */; };
+		805C339D22604E3D00AFE477 /* CRRefreshBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338922604E3C00AFE477 /* CRRefreshBundle.swift */; };
+		805C339E22604E3D00AFE477 /* RamotionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C337F22604E3A00AFE477 /* RamotionAnimator.swift */; };
+		805C339F22604E3D00AFE477 /* FastCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338322604E3B00AFE477 /* FastCircleLayer.swift */; };
+		805C33A022604E3D00AFE477 /* RamotionBounceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338D22604E3D00AFE477 /* RamotionBounceLayer.swift */; };
+		805C33A122604E3D00AFE477 /* CRRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C338622604E3B00AFE477 /* CRRefreshAnimator.swift */; };
+		805C33A222604E3D00AFE477 /* CRRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805C337922604E3800AFE477 /* CRRefreshComponent.swift */; };
+		806723AB22665F9300693A66 /* DateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806723AA22665F9300693A66 /* DateHeaderView.swift */; };
+		806723AE226661B700693A66 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806723AD226661B700693A66 /* HeaderView.swift */; };
+		8082AABA224D88B40030104D /* GroupStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082AAB9224D88B40030104D /* GroupStanding.swift */; };
+		8082AABC224DC9520030104D /* LeagueFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082AABB224DC9520030104D /* LeagueFilterViewController.swift */; };
+		808F3B412268253900F4F2D9 /* LabeledImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808F3B402268253900F4F2D9 /* LabeledImageView.swift */; };
+		80A76D362240754D00C43C8A /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A76D352240754D00C43C8A /* LabelCollectionViewCell.swift */; };
+		80AAFB9422418D8C0083A287 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AAFB9322418D8C0083A287 /* DateCollectionViewCell.swift */; };
+		80AAFB982241C79C0083A287 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AAFB972241C79C0083A287 /* MatchTableViewCell.swift */; };
+		80AFA27E2256E18500BD257B /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AFA27D2256E18500BD257B /* BasicTableViewCell.swift */; };
+		80AFA2842256E49600BD257B /* BasicHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AFA2832256E49500BD257B /* BasicHeaderView.swift */; };
+		80CA971C2238A67900742AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA971B2238A67900742AE1 /* AppDelegate.swift */; };
+		80CA971E2238A67900742AE1 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA971D2238A67900742AE1 /* ScheduleViewController.swift */; };
+		80CA97232238A67A00742AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CA97222238A67A00742AE1 /* Assets.xcassets */; };
+		80CA97262238A67A00742AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CA97242238A67A00742AE1 /* LaunchScreen.storyboard */; };
+		80CA97372239893700742AE1 /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA97302239893700742AE1 /* Collection+.swift */; };
+		80CA97382239893700742AE1 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA97312239893700742AE1 /* UIFont+.swift */; };
+		80CA97392239893700742AE1 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA97322239893700742AE1 /* UIView+.swift */; };
+		80CA973A2239893700742AE1 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA97332239893700742AE1 /* String+.swift */; };
+		80CA973B2239893700742AE1 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA97342239893700742AE1 /* UITextField+.swift */; };
+		80CA973C2239893700742AE1 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA97352239893700742AE1 /* UIImage+.swift */; };
+		80CA973D2239893700742AE1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA97362239893700742AE1 /* UIColor+.swift */; };
+		80CC84312244958D008AF292 /* LiveMatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC84302244958D008AF292 /* LiveMatchTableViewCell.swift */; };
+		80CC84332244AA11008AF292 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC84322244AA11008AF292 /* Date+.swift */; };
+		80E7262A225144D000E55D76 /* LeagueHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E72629225144D000E55D76 /* LeagueHeaderView.swift */; };
+		80EC3C6622484A6100263546 /* LolEsportsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC3C6522484A6100263546 /* LolEsportsService.swift */; };
+		80EC3C682248742F00263546 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC3C672248742F00263546 /* League.swift */; };
+		80F77AC72267AB52009A872A /* Launch Screen Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80F77AC62267AB52009A872A /* Launch Screen Background.jpg */; };
+		80F77AD52267B2CA009A872A /* Launch Screen Background Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F77AD42267B2CA009A872A /* Launch Screen Background Image.png */; };
+		80F77AD92267BB0E009A872A /* Launch Screen Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F77AD82267BB0E009A872A /* Launch Screen Icon.png */; };
+		B8FB271C14E003DD7F32CE30 /* Pods_lolesports_calendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FC4067BFA338CC1745D4DC /* Pods_lolesports_calendar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31FC4067BFA338CC1745D4DC /* Pods_lolesports_calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lolesports_calendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614BB326E95CC491D2D263D3 /* Pods-lolesports-calendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolesports-calendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-lolesports-calendar/Pods-lolesports-calendar.release.xcconfig"; sourceTree = "<group>"; };
+		802026A9224E8291005148A5 /* LeagueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableViewCell.swift; sourceTree = "<group>"; };
+		802160452248431400FF2D91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		803B3D422253C7A100AC61C8 /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
+		803B3D482253D40900AC61C8 /* SerieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieTableViewCell.swift; sourceTree = "<group>"; };
+		803B3D4D22544FA800AC61C8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		804868B3224AF2A60012B379 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		804868B5224AF2AD0012B379 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		804868B7224AF2B50012B379 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		804868B9224AF2BD0012B379 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		804868BB224AF2C30012B379 /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		804868BD224AF2C90012B379 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		804868C4224B35310012B379 /* Opponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opponent.swift; sourceTree = "<group>"; };
+		804B23802268FE3800BAF8D4 /* UIFont Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont Extension.swift"; sourceTree = "<group>"; };
+		805C33772260438100AFE477 /* MatchCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCollection.swift; sourceTree = "<group>"; };
+		805C337922604E3800AFE477 /* CRRefreshComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRRefreshComponent.swift; sourceTree = "<group>"; };
+		805C337A22604E3900AFE477 /* RamotionBallLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamotionBallLayer.swift; sourceTree = "<group>"; };
+		805C337B22604E3900AFE477 /* CRRefreshProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRRefreshProtocol.swift; sourceTree = "<group>"; };
+		805C337C22604E3900AFE477 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		805C337D22604E3900AFE477 /* WCLLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCLLoadingView.swift; sourceTree = "<group>"; };
+		805C337E22604E3A00AFE477 /* SlackLoadingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackLoadingAnimator.swift; sourceTree = "<group>"; };
+		805C337F22604E3A00AFE477 /* RamotionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamotionAnimator.swift; sourceTree = "<group>"; };
+		805C338022604E3A00AFE477 /* CRRefreshFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRRefreshFooterView.swift; sourceTree = "<group>"; };
+		805C338122604E3A00AFE477 /* FastAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastAnimator.swift; sourceTree = "<group>"; };
+		805C338222604E3A00AFE477 /* RamotionWaveLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamotionWaveLayer.swift; sourceTree = "<group>"; };
+		805C338322604E3B00AFE477 /* FastCircleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCircleLayer.swift; sourceTree = "<group>"; };
+		805C338422604E3B00AFE477 /* FastArrowLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastArrowLayer.swift; sourceTree = "<group>"; };
+		805C338522604E3B00AFE477 /* CRRefreshExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRRefreshExtension.swift; sourceTree = "<group>"; };
+		805C338622604E3B00AFE477 /* CRRefreshAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRRefreshAnimator.swift; sourceTree = "<group>"; };
+		805C338722604E3C00AFE477 /* FastLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLayer.swift; sourceTree = "<group>"; };
+		805C338822604E3C00AFE477 /* NormalFooterAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalFooterAnimator.swift; sourceTree = "<group>"; };
+		805C338922604E3C00AFE477 /* CRRefreshBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRRefreshBundle.swift; sourceTree = "<group>"; };
+		805C338A22604E3C00AFE477 /* CRRefreshHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRRefreshHeaderView.swift; sourceTree = "<group>"; };
+		805C338B22604E3C00AFE477 /* NormalHeaderAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalHeaderAnimator.swift; sourceTree = "<group>"; };
+		805C338C22604E3D00AFE477 /* FastCheckLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCheckLayer.swift; sourceTree = "<group>"; };
+		805C338D22604E3D00AFE477 /* RamotionBounceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamotionBounceLayer.swift; sourceTree = "<group>"; };
+		806723AA22665F9300693A66 /* DateHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeaderView.swift; sourceTree = "<group>"; };
+		806723AD226661B700693A66 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8082AAB9224D88B40030104D /* GroupStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStanding.swift; sourceTree = "<group>"; };
+		8082AABB224DC9520030104D /* LeagueFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeagueFilterViewController.swift; path = "League Filter & Sort/LeagueFilterViewController.swift"; sourceTree = "<group>"; };
+		808F3B402268253900F4F2D9 /* LabeledImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledImageView.swift; sourceTree = "<group>"; };
+		80A76D352240754D00C43C8A /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		80AAFB9322418D8C0083A287 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		80AAFB972241C79C0083A287 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		80AFA27D2256E18500BD257B /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
+		80AFA2832256E49500BD257B /* BasicHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicHeaderView.swift; sourceTree = "<group>"; };
+		80CA97182238A67900742AE1 /* lolesports-calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lolesports-calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80CA971B2238A67900742AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80CA971D2238A67900742AE1 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		80CA97222238A67A00742AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80CA97252238A67A00742AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80CA97272238A67A00742AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80CA97302239893700742AE1 /* Collection+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
+		80CA97312239893700742AE1 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		80CA97322239893700742AE1 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		80CA97332239893700742AE1 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		80CA97342239893700742AE1 /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		80CA97352239893700742AE1 /* UIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		80CA97362239893700742AE1 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		80CC84302244958D008AF292 /* LiveMatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchTableViewCell.swift; sourceTree = "<group>"; };
+		80CC84322244AA11008AF292 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		80E72629225144D000E55D76 /* LeagueHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueHeaderView.swift; sourceTree = "<group>"; };
+		80EC3C6522484A6100263546 /* LolEsportsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolEsportsService.swift; sourceTree = "<group>"; };
+		80EC3C672248742F00263546 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		80F77AC62267AB52009A872A /* Launch Screen Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Launch Screen Background.jpg"; sourceTree = "<group>"; };
+		80F77AD42267B2CA009A872A /* Launch Screen Background Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch Screen Background Image.png"; sourceTree = "<group>"; };
+		80F77AD82267BB0E009A872A /* Launch Screen Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launch Screen Icon.png"; sourceTree = "<group>"; };
+		C1FE33F253EA62FC3FC03335 /* Pods-lolesports-calendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lolesports-calendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lolesports-calendar/Pods-lolesports-calendar.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80CA97152238A67900742AE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FB271C14E003DD7F32CE30 /* Pods_lolesports_calendar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B9FFB0D63A12B65C29921B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31FC4067BFA338CC1745D4DC /* Pods_lolesports_calendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		804868BF224AF3320012B379 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				80EC3C6522484A6100263546 /* LolEsportsService.swift */,
+				805C33772260438100AFE477 /* MatchCollection.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		804868C0224AF3410012B379 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				804868B9224AF2BD0012B379 /* Match.swift */,
+				803B3D422253C7A100AC61C8 /* Serie.swift */,
+				804868BB224AF2C30012B379 /* Tournament.swift */,
+				8082AAB9224D88B40030104D /* GroupStanding.swift */,
+				804868B7224AF2B50012B379 /* Status.swift */,
+				804868B5224AF2AD0012B379 /* Result.swift */,
+				804868B3224AF2A60012B379 /* Team.swift */,
+				804868C4224B35310012B379 /* Opponent.swift */,
+				80EC3C672248742F00263546 /* League.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		804868C1224AF3610012B379 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				804868BD224AF2C90012B379 /* RequestError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		805C33A322604E4B00AFE477 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				805C338622604E3B00AFE477 /* CRRefreshAnimator.swift */,
+				805C338922604E3C00AFE477 /* CRRefreshBundle.swift */,
+				805C337922604E3800AFE477 /* CRRefreshComponent.swift */,
+				805C338522604E3B00AFE477 /* CRRefreshExtension.swift */,
+				805C338022604E3A00AFE477 /* CRRefreshFooterView.swift */,
+				805C338A22604E3C00AFE477 /* CRRefreshHeaderView.swift */,
+				805C337B22604E3900AFE477 /* CRRefreshProtocol.swift */,
+				805C338122604E3A00AFE477 /* FastAnimator.swift */,
+				805C338422604E3B00AFE477 /* FastArrowLayer.swift */,
+				805C338C22604E3D00AFE477 /* FastCheckLayer.swift */,
+				805C338322604E3B00AFE477 /* FastCircleLayer.swift */,
+				805C338722604E3C00AFE477 /* FastLayer.swift */,
+				805C338822604E3C00AFE477 /* NormalFooterAnimator.swift */,
+				805C338B22604E3C00AFE477 /* NormalHeaderAnimator.swift */,
+				805C337F22604E3A00AFE477 /* RamotionAnimator.swift */,
+				805C337A22604E3900AFE477 /* RamotionBallLayer.swift */,
+				805C338D22604E3D00AFE477 /* RamotionBounceLayer.swift */,
+				805C338222604E3A00AFE477 /* RamotionWaveLayer.swift */,
+				805C337E22604E3A00AFE477 /* SlackLoadingAnimator.swift */,
+				805C337C22604E3900AFE477 /* UIColorExtension.swift */,
+				805C337D22604E3900AFE477 /* WCLLoadingView.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		806723AC22665F9F00693A66 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				806723AD226661B700693A66 /* HeaderView.swift */,
+				80AFA2832256E49500BD257B /* BasicHeaderView.swift */,
+				806723AA22665F9300693A66 /* DateHeaderView.swift */,
+				80E72629225144D000E55D76 /* LeagueHeaderView.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		80A76D342240754D00C43C8A /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				80A76D352240754D00C43C8A /* LabelCollectionViewCell.swift */,
+				80AAFB9322418D8C0083A287 /* DateCollectionViewCell.swift */,
+			);
+			path = "Collection View Cells";
+			sourceTree = "<group>";
+		};
+		80AAFB992241C7A00083A287 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				80AFA27D2256E18500BD257B /* BasicTableViewCell.swift */,
+				80AAFB972241C79C0083A287 /* MatchTableViewCell.swift */,
+				80CC84302244958D008AF292 /* LiveMatchTableViewCell.swift */,
+				802026A9224E8291005148A5 /* LeagueTableViewCell.swift */,
+				803B3D482253D40900AC61C8 /* SerieTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		80CA970F2238A67900742AE1 = {
+			isa = PBXGroup;
+			children = (
+				80CA971A2238A67900742AE1 /* lolesports-calendar */,
+				80CA97192238A67900742AE1 /* Products */,
+				EAF4C122D94B04090745D151 /* Pods */,
+				0B9FFB0D63A12B65C29921B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		80CA97192238A67900742AE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80CA97182238A67900742AE1 /* lolesports-calendar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80CA971A2238A67900742AE1 /* lolesports-calendar */ = {
+			isa = PBXGroup;
+			children = (
+				80CA972F2239893700742AE1 /* Extensions */,
+				804868C1224AF3610012B379 /* Errors */,
+				804868BF224AF3320012B379 /* Services */,
+				804868C0224AF3410012B379 /* Models */,
+				80FD9EA7223EFD0600097B43 /* Views */,
+				80FD9EA8223EFD0D00097B43 /* View Controllers */,
+				80CA971B2238A67900742AE1 /* AppDelegate.swift */,
+				80CA97222238A67A00742AE1 /* Assets.xcassets */,
+				80F77AC32267AAFB009A872A /* Launch Screen Images */,
+				80CA97242238A67A00742AE1 /* LaunchScreen.storyboard */,
+				80CA97272238A67A00742AE1 /* Info.plist */,
+				802160452248431400FF2D91 /* GoogleService-Info.plist */,
+			);
+			path = "lolesports-calendar";
+			sourceTree = "<group>";
+		};
+		80CA972F2239893700742AE1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80CA97302239893700742AE1 /* Collection+.swift */,
+				80CA97312239893700742AE1 /* UIFont+.swift */,
+				804B23802268FE3800BAF8D4 /* UIFont Extension.swift */,
+				80CA97322239893700742AE1 /* UIView+.swift */,
+				80CC84322244AA11008AF292 /* Date+.swift */,
+				80CA97332239893700742AE1 /* String+.swift */,
+				80CA97342239893700742AE1 /* UITextField+.swift */,
+				80CA97352239893700742AE1 /* UIImage+.swift */,
+				80CA97362239893700742AE1 /* UIColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80F77AC32267AAFB009A872A /* Launch Screen Images */ = {
+			isa = PBXGroup;
+			children = (
+				80F77AD42267B2CA009A872A /* Launch Screen Background Image.png */,
+				80F77AD82267BB0E009A872A /* Launch Screen Icon.png */,
+				80F77AC62267AB52009A872A /* Launch Screen Background.jpg */,
+			);
+			path = "Launch Screen Images";
+			sourceTree = "<group>";
+		};
+		80FD9EA7223EFD0600097B43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80A76D342240754D00C43C8A /* Collection View Cells */,
+				80AAFB992241C7A00083A287 /* Table View Cells */,
+				806723AC22665F9F00693A66 /* HeaderView */,
+				805C33A322604E4B00AFE477 /* Refresh */,
+				808F3B402268253900F4F2D9 /* LabeledImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80FD9EA8223EFD0D00097B43 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				803B3D4D22544FA800AC61C8 /* MainViewController.swift */,
+				8082AABB224DC9520030104D /* LeagueFilterViewController.swift */,
+				80CA971D2238A67900742AE1 /* ScheduleViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EAF4C122D94B04090745D151 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1FE33F253EA62FC3FC03335 /* Pods-lolesports-calendar.debug.xcconfig */,
+				614BB326E95CC491D2D263D3 /* Pods-lolesports-calendar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80CA97172238A67900742AE1 /* lolesports-calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80CA972A2238A67A00742AE1 /* Build configuration list for PBXNativeTarget "lolesports-calendar" */;
+			buildPhases = (
+				9EE79B4399252628F092F551 /* [CP] Check Pods Manifest.lock */,
+				80CA97142238A67900742AE1 /* Sources */,
+				80CA97152238A67900742AE1 /* Frameworks */,
+				80CA97162238A67900742AE1 /* Resources */,
+				1E23BEB9FBC91650D09032E6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lolesports-calendar";
+			productName = "lolesports-calendar";
+			productReference = 80CA97182238A67900742AE1 /* lolesports-calendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80CA97102238A67900742AE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Theodore Gallao";
+				TargetAttributes = {
+					80CA97172238A67900742AE1 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 80CA97132238A67900742AE1 /* Build configuration list for PBXProject "lolesports-calendar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80CA970F2238A67900742AE1;
+			productRefGroup = 80CA97192238A67900742AE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80CA97172238A67900742AE1 /* lolesports-calendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80CA97162238A67900742AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80CA97262238A67A00742AE1 /* LaunchScreen.storyboard in Resources */,
+				80CA97232238A67A00742AE1 /* Assets.xcassets in Resources */,
+				80F77AC72267AB52009A872A /* Launch Screen Background.jpg in Resources */,
+				80F77AD52267B2CA009A872A /* Launch Screen Background Image.png in Resources */,
+				802160462248431500FF2D91 /* GoogleService-Info.plist in Resources */,
+				80F77AD92267BB0E009A872A /* Launch Screen Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E23BEB9FBC91650D09032E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-lolesports-calendar/Pods-lolesports-calendar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lolesports-calendar/Pods-lolesports-calendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE79B4399252628F092F551 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lolesports-calendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80CA97142238A67900742AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8082AABA224D88B40030104D /* GroupStanding.swift in Sources */,
+				804868BE224AF2C90012B379 /* RequestError.swift in Sources */,
+				80CC84332244AA11008AF292 /* Date+.swift in Sources */,
+				805C33782260438100AFE477 /* MatchCollection.swift in Sources */,
+				804868C5224B35310012B379 /* Opponent.swift in Sources */,
+				804868B8224AF2B50012B379 /* Status.swift in Sources */,
+				808F3B412268253900F4F2D9 /* LabeledImageView.swift in Sources */,
+				805C339922604E3D00AFE477 /* CRRefreshProtocol.swift in Sources */,
+				80AFA27E2256E18500BD257B /* BasicTableViewCell.swift in Sources */,
+				805C33A222604E3D00AFE477 /* CRRefreshComponent.swift in Sources */,
+				802026AA224E8291005148A5 /* LeagueTableViewCell.swift in Sources */,
+				80CA97392239893700742AE1 /* UIView+.swift in Sources */,
+				80CA971E2238A67900742AE1 /* ScheduleViewController.swift in Sources */,
+				805C339022604E3D00AFE477 /* CRRefreshHeaderView.swift in Sources */,
+				804868B6224AF2AD0012B379 /* Result.swift in Sources */,
+				80AAFB982241C79C0083A287 /* MatchTableViewCell.swift in Sources */,
+				804868BA224AF2BD0012B379 /* Match.swift in Sources */,
+				803B3D432253C7A100AC61C8 /* Serie.swift in Sources */,
+				805C339122604E3D00AFE477 /* NormalFooterAnimator.swift in Sources */,
+				805C338F22604E3D00AFE477 /* CRRefreshExtension.swift in Sources */,
+				805C339822604E3D00AFE477 /* NormalHeaderAnimator.swift in Sources */,
+				806723AB22665F9300693A66 /* DateHeaderView.swift in Sources */,
+				805C339D22604E3D00AFE477 /* CRRefreshBundle.swift in Sources */,
+				80CA971C2238A67900742AE1 /* AppDelegate.swift in Sources */,
+				805C33A122604E3D00AFE477 /* CRRefreshAnimator.swift in Sources */,
+				80CC84312244958D008AF292 /* LiveMatchTableViewCell.swift in Sources */,
+				804868BC224AF2C30012B379 /* Tournament.swift in Sources */,
+				805C339722604E3D00AFE477 /* WCLLoadingView.swift in Sources */,
+				80CA97382239893700742AE1 /* UIFont+.swift in Sources */,
+				803B3D492253D40900AC61C8 /* SerieTableViewCell.swift in Sources */,
+				803B3D4E22544FA800AC61C8 /* MainViewController.swift in Sources */,
+				80EC3C682248742F00263546 /* League.swift in Sources */,
+				805C339522604E3D00AFE477 /* SlackLoadingAnimator.swift in Sources */,
+				805C339422604E3D00AFE477 /* UIColorExtension.swift in Sources */,
+				80CA973A2239893700742AE1 /* String+.swift in Sources */,
+				80AAFB9422418D8C0083A287 /* DateCollectionViewCell.swift in Sources */,
+				805C339C22604E3D00AFE477 /* CRRefreshFooterView.swift in Sources */,
+				8082AABC224DC9520030104D /* LeagueFilterViewController.swift in Sources */,
+				805C339222604E3D00AFE477 /* RamotionWaveLayer.swift in Sources */,
+				804B23812268FE3900BAF8D4 /* UIFont Extension.swift in Sources */,
+				805C339F22604E3D00AFE477 /* FastCircleLayer.swift in Sources */,
+				805C338E22604E3D00AFE477 /* FastAnimator.swift in Sources */,
+				805C339622604E3D00AFE477 /* FastLayer.swift in Sources */,
+				80AFA2842256E49600BD257B /* BasicHeaderView.swift in Sources */,
+				805C339B22604E3D00AFE477 /* FastArrowLayer.swift in Sources */,
+				805C339E22604E3D00AFE477 /* RamotionAnimator.swift in Sources */,
+				80CA973C2239893700742AE1 /* UIImage+.swift in Sources */,
+				805C339A22604E3D00AFE477 /* RamotionBallLayer.swift in Sources */,
+				80CA97372239893700742AE1 /* Collection+.swift in Sources */,
+				806723AE226661B700693A66 /* HeaderView.swift in Sources */,
+				805C33A022604E3D00AFE477 /* RamotionBounceLayer.swift in Sources */,
+				80CA973B2239893700742AE1 /* UITextField+.swift in Sources */,
+				804868B4224AF2A60012B379 /* Team.swift in Sources */,
+				805C339322604E3D00AFE477 /* FastCheckLayer.swift in Sources */,
+				80E7262A225144D000E55D76 /* LeagueHeaderView.swift in Sources */,
+				80EC3C6622484A6100263546 /* LolEsportsService.swift in Sources */,
+				80CA973D2239893700742AE1 /* UIColor+.swift in Sources */,
+				80A76D362240754D00C43C8A /* LabelCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80CA97242238A67A00742AE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80CA97252238A67A00742AE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80CA97282238A67A00742AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80CA97292238A67A00742AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80CA972B2238A67A00742AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1FE33F253EA62FC3FC03335 /* Pods-lolesports-calendar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MY2YKYJ4TV;
+				INFOPLIST_FILE = "lolesports-calendar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.theodoregallao.lolesports-calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80CA972C2238A67A00742AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614BB326E95CC491D2D263D3 /* Pods-lolesports-calendar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MY2YKYJ4TV;
+				INFOPLIST_FILE = "lolesports-calendar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.theodoregallao.lolesports-calendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80CA97132238A67900742AE1 /* Build configuration list for PBXProject "lolesports-calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80CA97282238A67A00742AE1 /* Debug */,
+				80CA97292238A67A00742AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80CA972A2238A67A00742AE1 /* Build configuration list for PBXNativeTarget "lolesports-calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80CA972B2238A67A00742AE1 /* Debug */,
+				80CA972C2238A67A00742AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80CA97102238A67900742AE1 /* Project object */;
+}
