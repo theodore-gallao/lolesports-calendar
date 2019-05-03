@@ -181,20 +181,32 @@ extension Date {
         return "\(yearStr)-\(monthStr)-\(dayStr)T\(hourStr):\(minuteStr):\(secondStr)Z"
     }
     
-    func isInSameWeek(date: Date) -> Bool {
-        return Calendar.current.isDate(self, equalTo: date, toGranularity: .weekOfYear)
+    func isInSameWeek(date: Date, timeZone: TimeZone ) -> Bool {
+        var calendar = Calendar.current
+        calendar.timeZone = timeZone
+        
+        return calendar.isDate(self, equalTo: date, toGranularity: .weekOfYear)
     }
-    func isInSameMonth(date: Date) -> Bool {
-        return Calendar.current.isDate(self, equalTo: date, toGranularity: .month)
+    func isInSameMonth(date: Date, timeZone: TimeZone) -> Bool {
+        var calendar = Calendar.current
+        calendar.timeZone = timeZone
+        
+        return calendar.isDate(self, equalTo: date, toGranularity: .month)
     }
-    func isInSameYear(date: Date) -> Bool {
-        return Calendar.current.isDate(self, equalTo: date, toGranularity: .year)
+    func isInSameYear(date: Date, timeZone: TimeZone) -> Bool {
+        var calendar = Calendar.current
+        calendar.timeZone = timeZone
+        
+        return calendar.isDate(self, equalTo: date, toGranularity: .year)
     }
-    func isInSameDay(date: Date) -> Bool {
-        return Calendar.current.isDate(self, equalTo: date, toGranularity: .day)
+    func isInSameDay(date: Date, timeZone: TimeZone) -> Bool {
+        var calendar = Calendar.current
+        calendar.timeZone = timeZone
+        
+        return calendar.isDate(self, inSameDayAs: date)
     }
     var isInThisWeek: Bool {
-        return isInSameWeek(date: Date().convertToTimeZone(initTimeZone: TimeZone(abbreviation: "UTC")!, timeZone: TimeZone.current))
+        return isInSameWeek(date: Date().convertToTimeZone(initTimeZone: TimeZone(abbreviation: "UTC")!, timeZone: TimeZone.current), timeZone: TimeZone(abbreviation: "UTC")!)
     }
     var isInToday: Bool {
         return Calendar.current.isDateInToday(self)
