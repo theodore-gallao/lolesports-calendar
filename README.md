@@ -1,1 +1,1 @@
-# lolesports-calendar
+# lolesports-schedule
