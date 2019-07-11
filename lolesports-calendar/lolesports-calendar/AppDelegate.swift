@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainViewController = MainViewController(leagueCollections: leagueCollections,
                                                     selectedLeagues:   self.selectedLeagues,
                                                     lolEsportsService: lolEsportsService)
-        mainViewController.view.backgroundColor = UIColor.Flat.White.silver
+        mainViewController.view.backgroundColor = UIColor.black
         
         return mainViewController
     }()

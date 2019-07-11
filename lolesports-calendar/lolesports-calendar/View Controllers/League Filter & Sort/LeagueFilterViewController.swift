@@ -55,7 +55,7 @@ class LeagueFilterViewController: UIViewController {
     }()
     
     private lazy var doneBarButtonItem: UIBarButtonItem = {
-        let barButtonItem = UIBarButtonItem(image: UIImage(named: "Forward Arrow"),
+        let barButtonItem = UIBarButtonItem(image: UIImage(named: "Back Arrow"),
                                             style: UIBarButtonItem.Style.plain,
                                             target: self,
                                             action: #selector(self.handleTapDoneBarButtonItem(_:)))
@@ -244,7 +244,7 @@ extension LeagueFilterViewController: UITableViewDelegate, UITableViewDataSource
     public func setDoneButtonHidden(_ hidden: Bool) {
         self.doneBarButtonItem.isEnabled = !hidden
         self.doneBarButtonItem.image =
-            hidden ? nil : UIImage(named: "Forward Arrow")
+            hidden ? nil : UIImage(named: "Back Arrow")
     }
     
     @objc private func handleTapDoneBarButtonItem(_ sender: UIBarButtonItem) {

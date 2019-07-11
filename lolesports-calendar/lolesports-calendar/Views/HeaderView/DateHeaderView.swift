@@ -34,9 +34,9 @@ class DateHeaderView: BasicHeaderView {
             if dateModel.date.isInToday {
                 self.subtitleLabel.text = "TODAY"
                 self.subtitleLabel.textColor = UIColor.Flat.Red.alizarin
-            } else if dateModel.date.isInSameDay(date: yesterday) {
+            } else if dateModel.date.isInSameDay(date: yesterday, timeZone: TimeZone(abbreviation: "UTC")!) {
                 self.subtitleLabel.text = "YESTERDAY"
-            } else if dateModel.date.isInSameDay(date: tomorrow) {
+            } else if dateModel.date.isInSameDay(date: tomorrow, timeZone: TimeZone(abbreviation: "UTC")!) {
                 self.subtitleLabel.text = "TOMORROW"
             } else {
                 self.subtitleLabel.text = dateModel.weekdayStr.uppercased()

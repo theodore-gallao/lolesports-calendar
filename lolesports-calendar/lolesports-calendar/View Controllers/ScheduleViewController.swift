@@ -74,7 +74,7 @@ class ScheduleViewController: UIViewController {
             // Section is index of first date model where date is in same day as match
             let section = self.matches.dateModels.firstIndex(where: { (current) -> Bool in
                 if let current = current {
-                    return beginAt.isInSameDay(date: current.date)
+                    return beginAt.isInSameDay(date: current.date, timeZone: TimeZone(abbreviation: "UTC")!)
                 } else {
                     return false
                 }
@@ -134,16 +134,16 @@ class ScheduleViewController: UIViewController {
     
     private let alertLabeledImageView: LabeledImageView = {
         let labeledImageView = LabeledImageView()
-        labeledImageView.backgroundColor = UIColor.white
-        labeledImageView.textColor = UIColor.black
-        labeledImageView.textAlignment = .center
-        labeledImageView.font = UIFont.Trebuchet.bold.withSize(12)
-        labeledImageView.labelPosition = .right
-        labeledImageView.labelEdgeInsets = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 10)
-        labeledImageView.imageEdgeInsets = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 4)
-        labeledImageView.tintColor = UIColor.Flat.Red.alizarin
-        labeledImageView.layer.cornerRadius = 4
-        labeledImageView.layer.masksToBounds = true
+        labeledImageView.backgroundColor          = UIColor.white
+        labeledImageView.textColor                = UIColor.black
+        labeledImageView.textAlignment            = .center
+        labeledImageView.font                     = UIFont.Trebuchet.bold.withSize(12)
+        labeledImageView.labelPosition            = .right
+        labeledImageView.labelEdgeInsets          = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 12)
+        labeledImageView.imageEdgeInsets          = UIEdgeInsets(top: 6, left: 8, bottom: 6, right: 6)
+        labeledImageView.tintColor                = UIColor.Flat.Red.alizarin
+        labeledImageView.layer.cornerRadius       = 4
+        labeledImageView.layer.masksToBounds      = true
         labeledImageView.isUserInteractionEnabled = true
         labeledImageView.translatesAutoresizingMaskIntoConstraints = false
         labeledImageView.dropShadow(color: UIColor.black, opacity: 0.2, offSet: CGSize(width: 0, height: 2), radius: 1.5)
@@ -247,17 +247,17 @@ class ScheduleViewController: UIViewController {
     
     private lazy var presentLabeledImageView: LabeledImageView = {
         let labeledImageView = LabeledImageView()
-        labeledImageView.backgroundColor = UIColor.Flat.Red.alizarin
-        labeledImageView.text = "PRESENT"
-        labeledImageView.textColor = UIColor.white
-        labeledImageView.textAlignment = .center
-        labeledImageView.font = UIFont.Trebuchet.bold.withSize(12)
-        labeledImageView.labelPosition = .right
-        labeledImageView.labelEdgeInsets = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 10)
-        labeledImageView.imageEdgeInsets = UIEdgeInsets(top: 6, left: 2, bottom: 6, right: 0)
-        labeledImageView.tintColor = UIColor.white
-        labeledImageView.layer.cornerRadius = 4
-        labeledImageView.layer.masksToBounds = true
+        labeledImageView.backgroundColor          = UIColor.Flat.Red.alizarin
+        labeledImageView.text                     = "PRESENT"
+        labeledImageView.textColor                = UIColor.white
+        labeledImageView.textAlignment            = .center
+        labeledImageView.font                     = UIFont.Trebuchet.bold.withSize(12)
+        labeledImageView.labelPosition            = .right
+        labeledImageView.labelEdgeInsets          = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 10)
+        labeledImageView.imageEdgeInsets          = UIEdgeInsets(top: 6, left: 2, bottom: 6, right: 0)
+        labeledImageView.tintColor                = UIColor.white
+        labeledImageView.layer.cornerRadius       = 4
+        labeledImageView.layer.masksToBounds      = true
         labeledImageView.isUserInteractionEnabled = true
         labeledImageView.translatesAutoresizingMaskIntoConstraints = false
         labeledImageView.dropShadow(color: UIColor.black, opacity: 0.2, offSet: CGSize(width: 0, height: 2), radius: 1.5)
@@ -447,7 +447,7 @@ extension ScheduleViewController {
         NSLayoutConstraint.deactivate(self.alertLabeledImageViewConstraints)
         
         var constraints = [
-            self.alertLabeledImageView.heightAnchor.constraint(equalToConstant: 30),
+            self.alertLabeledImageView.heightAnchor.constraint(equalToConstant: 44),
             self.alertLabeledImageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0)
         ]
         
@@ -993,7 +993,7 @@ extension ScheduleViewController {
     private func scrollToDate(dateModel: DateModel?) {
         let section = self.matches.dateModels.firstIndex(where: { (current) -> Bool in
             if let lhs = dateModel, let rhs = current {
-                return lhs.date.isInSameDay(date: rhs.date)
+                return lhs.date.isInSameDay(date: rhs.date, timeZone: TimeZone(abbreviation: "UTC")!)
             } else {
                 return dateModel == nil && current == nil
             }
